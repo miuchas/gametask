@@ -1,11 +1,33 @@
 @extends('layouts.layout')
 @section('corpo')
-.column
-  %h1.title To Do
-  .item
-    %h2.item-title do the dishes
-  .item
-    %h2.item-title learn Angular 2
-.column
-  %h1.title Done
+.cartoes
+  %section.list
+    %header.title To Do
+    .itens
+      %article.dont-drag
+
+      %article.card.item
+        %header Drag and Drop CSS
+        .detail 1/2
+      %article.card.item
+        %header Maybe something else ?
+        .detail 1/2
+    .add-new
+      %a{ :href => "#"} add novo quadro
+
+  %section.list
+    %header.title To Do
+    .itens
+      %article.dont-drag
+
+      %article.card.item
+        %header Drag and Drop CSS
+        .detail 1/2
+      %article.card.item
+        %header Maybe something else ?
+        .detail 1/2
+    .add-new
+      %a{ :href => "#"} add novo quadro
+
+
 @endsection
