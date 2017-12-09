@@ -23,7 +23,7 @@ body {
     -o-user-select: none;
     user-select: none;
 }
-.list {
+.list, section.dont-drag {
   background-color: #E3E3E3;
   border-radius: 3px;
   margin: 5px 5px;
@@ -31,11 +31,17 @@ body {
   width: 260px;
   height: max-content;
 }
-.list>header {
+.list>header, section.dont-drag>header {
   font-weight: bold;
   font-size: 15px;
   line-height: 18px;
   cursor: grab;
+}
+section.dont-drag{
+  cursor: pointer;
+  header {
+    cursor: pointer;
+  }
 }
 .list article {
   border-radius: 3px;
