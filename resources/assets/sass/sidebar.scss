@@ -1,0 +1,35 @@
+ul{
+  padding: 0;
+  background-color: #1e5c8b;
+  height: 100%;
+  li{
+    text-align: center;
+    .titulo{
+      list-style-type: none;
+      font-weight: bold;
+      color: white;
+      padding: 26px 10px;
+      background-color: #0f425c;
+      opacity: 0.8;
+      .fa{
+        display: block;
+        margin-top: 5px;
+      }
+      &:hover{
+        background-color: #0c2b3c;
+      }
+    }
+    ul{
+      display: none;
+      li{
+        padding: 10px 0px;
+        &:hover{
+          background-color: #1b5682;
+        }
+        img{
+          width: 56px;
+        }
+      }
+    }
+  }
+}

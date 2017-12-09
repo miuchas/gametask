@@ -13,8 +13,12 @@
 
 // custom
 @import "dragula.min";
+@import "sidebar";
+@import "topbar";
 @import "gerenciador";
+@import "pontuacao";
 
 body{
   font-family: "Titillium Web", Tahoma, Arial, sans-serif !important;
+  background-color: #23719F;
 }

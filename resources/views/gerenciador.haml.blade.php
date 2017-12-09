@@ -1,4 +1,10 @@
 @extends('layouts.layout')
+
+@section('javascript')
+%script{:src => 'https://cdnjs.cloudflare.com/ajax/libs/dragula/3.7.0/dragula.min.js', :type => "text/javascript"}
+%script{:src => "/js/gerenciador.js", :type => "text/javascript"}
+@endsection
+
 @section('corpo')
 .cartoes
   %section.list

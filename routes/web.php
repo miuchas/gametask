@@ -11,6 +11,4 @@
 |
 */
 
-Route::get('/', function () {
-    return view('gerenciador');
-});
+Route::get('/', function () { return view('gerenciador'); });

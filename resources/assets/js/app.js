@@ -1,1 +1,2 @@
-require('./gerenciador.js');
+require('./sidebar.js');
+require('./topbar.js');

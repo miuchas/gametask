@@ -38,7 +38,3 @@ $("section.dont-drag").click(function(){
 $(".add-new").click(function(){
   $(this).parent().find(".itens").append('<article class="card item"><header>Titulo</header><div class="detail">Descricao</div></article>');
 });
-
-function teste(){
-  alert("oi");
-}
