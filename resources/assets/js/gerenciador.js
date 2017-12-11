@@ -29,12 +29,16 @@ for (var i in sup_container) {
   d_sup_container.containers.push(sup_container[i])
 }
 
-//cria novo quadro
-$("section.dont-drag").click(function(){
-  $(".cartoes").append('<section class="list"><header class="title">Titulo</header><div class="itens"><article class="dont-drag"></article></div><div class="add-new"><a href="#">Adicionar novo quadro</a></div></section>');
-});
 
-// cria nova tarefa
-$(".add-new").click(function(){
-  $(this).parent().find(".itens").append('<article class="card item"><header>Titulo</header><div class="detail">Descricao</div></article>');
-});
+$(function(){
+  //cria novo quadro
+  $("section.dont-drag").click(function(){
+    $(".cartoes").append('<section class="list"><header class="title">Titulo</header><div class="itens"><article class="dont-drag"></article></div><div class="add-new"><a href="#">Adicionar novo quadro</a></div></section>');
+  });
+
+  // cria nova tarefa
+  $(".cartoes").on("click",".add-new", function(){
+    console.log($(this));
+    $(this).parent().find(".itens").append('<article class="card item"><header>Titulo</header><div class="detail">Descricao</div></article>');
+  });
+})

@@ -43,7 +43,7 @@
       %article.card.item
         %header Maybe something else ?
         .detail 1/2
-    .add-new{ :onclick => "teste()"}
+    .add-new
       %a{ :href => "#"} add novo quadro
 
 %section.dont-drag
